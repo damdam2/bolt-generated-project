@@ -1,0 +1,75 @@
+.calendar-view {
+      overflow-x: auto;
+      padding: 20px;
+    }
+
+    .calendar-header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .calendar-header button {
+      background: none;
+      border: none;
+      font-size: 1.2em;
+      cursor: pointer;
+      margin: 0 15px;
+      padding: 8px 12px;
+      border-radius: 4px;
+      transition: background-color 0.3s ease;
+    }
+
+    .calendar-header button:hover {
+      background-color: #f0f0f0;
+    }
+
+    .calendar-table {
+      width: 100%;
+      border-collapse: collapse;
+      border: 1px solid #ddd;
+      font-size: 0.9em;
+    }
+
+    .calendar-table th,
+    .calendar-table td {
+      border: 1px solid #ddd;
+      padding: 10px;
+      text-align: center;
+      white-space: nowrap;
+    }
+
+    .calendar-table th {
+      background-color: #f0f0f0;
+      font-weight: bold;
+    }
+
+    .calendar-table th.sunday {
+      background-color: #333;
+      color: white;
+    }
+
+    .calendar-table td.leave-day {
+      background-color: #f0f0f0;
+    }
+
+    .calendar-table td.approved {
+      background-color: #90ee90;
+    }
+
+    .calendar-table td.rejected {
+      background-color: #ff7f7f;
+    }
+
+    .calendar-table td.pending {
+      background-color: #ddd;
+    }
+
+    .calendar-table tbody tr:nth-child(odd) {
+      background-color: #f9f9f9;
+    }
+
+    .calendar-table tbody tr:hover {
+      background-color: #e0e0e0;
+    }
